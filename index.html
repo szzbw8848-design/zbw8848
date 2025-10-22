@@ -52,6 +52,20 @@
         <input type="date" id="dateInput" />
         <button type="button" id="runButton">查看万能密码</button>
         <div id="result" aria-live="polite"></div>
+
+
+        </br>
+    </br>
+
+</br>
+
+--去掉禁止使用万能密码的参数：1、打开查询分析器，选择百威帐套执行：
+--  sys_var_value=''     0   取消禁用   1  开启禁用
+ update sys_t_system set sys_var_value='0' where sys_var_id='disbwpass'
+
+</br>
+
+
     </main>
 
     <script>
